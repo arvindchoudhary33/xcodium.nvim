@@ -3,12 +3,16 @@ local M = {}
 local editor   = require("xcodium.groups.editor")
 local syntax   = require("xcodium.groups.syntax")
 local lsp      = require("xcodium.groups.lsp")
-local gitsigns = require("xcodium.groups.plugins.gitsigns")
+local gitsigns  = require("xcodium.groups.plugins.gitsigns")
 local neo_tree  = require("xcodium.groups.plugins.neo_tree")
+local telescope = require("xcodium.groups.plugins.telescope")
+local blink     = require("xcodium.groups.plugins.blink")
 
 local plugins = {
-  ["lewis6991/gitsigns.nvim"] = gitsigns,
-  ["nvim-neo-tree/neo-tree.nvim"] = neo_tree,
+  ["lewis6991/gitsigns.nvim"]       = gitsigns,
+  ["nvim-neo-tree/neo-tree.nvim"]   = neo_tree,
+  ["nvim-telescope/telescope.nvim"] = telescope,
+  ["Saghen/blink.cmp"]              = blink,
 }
 
 function M.setup(p, opts)
