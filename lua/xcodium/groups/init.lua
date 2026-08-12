@@ -4,9 +4,11 @@ local editor   = require("xcodium.groups.editor")
 local syntax   = require("xcodium.groups.syntax")
 local lsp      = require("xcodium.groups.lsp")
 local gitsigns = require("xcodium.groups.plugins.gitsigns")
+local neo_tree  = require("xcodium.groups.plugins.neo_tree")
 
 local plugins = {
   ["lewis6991/gitsigns.nvim"] = gitsigns,
+  ["nvim-neo-tree/neo-tree.nvim"] = neo_tree,
 }
 
 function M.setup(p, opts)
