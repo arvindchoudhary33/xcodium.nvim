@@ -12,7 +12,7 @@ Xcode's dark and light themes for Neovim. Built from scratch in Lua with proper 
 
 ```lua
 {
-  "yourusername/xcodium.nvim",
+  "arvindchoudhary33/xcodium.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
