@@ -53,6 +53,165 @@ M.dark = {
 	},
 }
 
+M.midnight = {
+	bg = "#000000",
+	bg_float = "#0d0d0d",
+	bg_highlight = "#151515",
+	bg_selection = "#252525",
+	bg_sidebar = "#000000",
+
+	fg = "#ffffff",
+	fg_muted = "#6a7c8a",
+	fg_subtle = "#4a5a68",
+
+	border = "#252525",
+
+	pink = "#d31895",
+	red = "#ff2b38",
+	orange = "#ffa14f",
+	yellow = "#776cff",
+	blue = "#009fff",
+	purple = "#d31895",
+	lpurple = "#23ff82",
+	cyan = "#23ff82",
+	teal = "#41cc45",
+	lteal = "#41cc45",
+
+	error = "#ff2b38",
+	warning = "#ffa14f",
+	info = "#009fff",
+	hint = "#6a7c8a",
+
+	git_add = "#41cc45",
+	git_change = "#ffa14f",
+	git_delete = "#ff2b38",
+
+	terminal = {
+		black = "#1a1a1a",
+		red = "#ff2b38",
+		green = "#41cc45",
+		yellow = "#ffa14f",
+		blue = "#009fff",
+		magenta = "#d31895",
+		cyan = "#23ff82",
+		white = "#ffffff",
+		black_bright = "#4a5a68",
+		red_bright = "#ff2b38",
+		green_bright = "#41cc45",
+		yellow_bright = "#ffa14f",
+		blue_bright = "#009fff",
+		magenta_bright = "#d31895",
+		cyan_bright = "#23ff82",
+		white_bright = "#ffffff",
+	},
+}
+
+M.dusk = {
+	bg = "#1f212a",
+	bg_float = "#252830",
+	bg_highlight = "#2a2d38",
+	bg_selection = "#373b4a",
+	bg_sidebar = "#1f212a",
+
+	fg = "#f9f8f5",
+	fg_muted = "#7a8a9a",
+	fg_subtle = "#556070",
+
+	border = "#373b4a",
+
+	pink = "#b2183b",
+	red = "#dbb0d7",
+	orange = "#ffa14f",
+	yellow = "#78b8c4",
+	blue = "#a0c0bc",
+	purple = "#b2183b",
+	lpurple = "#83c10e",
+	cyan = "#a0c0bc",
+	teal = "#41b64a",
+	lteal = "#83c10e",
+
+	error = "#b2183b",
+	warning = "#ffa14f",
+	info = "#a0c0bc",
+	hint = "#7a8a9a",
+
+	git_add = "#41b64a",
+	git_change = "#ffa14f",
+	git_delete = "#b2183b",
+
+	terminal = {
+		black = "#2a2d38",
+		red = "#dbb0d7",
+		green = "#41b64a",
+		yellow = "#78b8c4",
+		blue = "#a0c0bc",
+		magenta = "#b2183b",
+		cyan = "#83c10e",
+		white = "#f9f8f5",
+		black_bright = "#556070",
+		red_bright = "#dbb0d7",
+		green_bright = "#83c10e",
+		yellow_bright = "#ffa14f",
+		blue_bright = "#a0c0bc",
+		magenta_bright = "#b2183b",
+		cyan_bright = "#41b64a",
+		white_bright = "#f9f8f5",
+	},
+}
+
+M.wwdc16 = {
+	bg = "#1f2028",
+	bg_float = "#25272f",
+	bg_highlight = "#2a2d38",
+	bg_selection = "#373b48",
+	bg_sidebar = "#1f2028",
+
+	fg = "#ffffff",
+	fg_muted = "#51728e",
+	fg_subtle = "#3d5568",
+
+	border = "#373b48",
+
+	pink = "#a42b82",
+	red = "#e24333",
+	orange = "#e24333",
+	yellow = "#3653d2",
+	blue = "#13a098",
+	purple = "#a42b82",
+	lpurple = "#a42b82",
+	cyan = "#13a098",
+	teal = "#48ae45",
+	lteal = "#48ae45",
+
+	error = "#e24333",
+	warning = "#3653d2",
+	info = "#13a098",
+	hint = "#51728e",
+
+	git_add = "#48ae45",
+	git_change = "#3653d2",
+	git_delete = "#e24333",
+
+	terminal = {
+		black = "#25272f",
+		red = "#e24333",
+		green = "#48ae45",
+		yellow = "#3653d2",
+		blue = "#13a098",
+		magenta = "#a42b82",
+		cyan = "#51728e",
+		white = "#ffffff",
+		black_bright = "#3d5568",
+		red_bright = "#e24333",
+		green_bright = "#48ae45",
+		yellow_bright = "#3653d2",
+		blue_bright = "#13a098",
+		magenta_bright = "#a42b82",
+		cyan_bright = "#51728e",
+		white_bright = "#ffffff",
+	},
+}
+
 M.light = {
 	bg = "#ffffff",
 	bg_float = "#f2f2f7",
