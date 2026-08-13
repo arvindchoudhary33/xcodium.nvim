@@ -1,20 +1,21 @@
 local M = {}
 
-function M.get(p, _)
+function M.get(p, opts)
+	local bg = opts.transparent and "NONE" or p.bg_float
 	return {
-		BlinkCmpMenu = { fg = p.fg, bg = p.bg_float },
-		BlinkCmpMenuBorder = { fg = p.border, bg = p.bg_float },
+		BlinkCmpMenu = { fg = p.fg, bg = bg },
+		BlinkCmpMenuBorder = { fg = p.border, bg = bg },
 		BlinkCmpMenuSelection = { bg = p.bg_selection },
 		BlinkCmpLabel = { fg = p.fg },
 		BlinkCmpLabelDeprecated = { fg = p.fg_muted, strikethrough = true },
 		BlinkCmpLabelMatch = { fg = p.yellow, bold = true },
-		BlinkCmpDoc = { fg = p.fg, bg = p.bg_float },
-		BlinkCmpDocBorder = { fg = p.border, bg = p.bg_float },
-		BlinkCmpDocSeparator = { fg = p.border, bg = p.bg_float },
+		BlinkCmpDoc = { fg = p.fg, bg = bg },
+		BlinkCmpDocBorder = { fg = p.border, bg = bg },
+		BlinkCmpDocSeparator = { fg = p.border, bg = bg },
 		BlinkCmpDocCursorLine = { bg = p.bg_highlight },
 		BlinkCmpGhostText = { fg = p.fg_subtle },
-		BlinkCmpSignatureHelp = { fg = p.fg, bg = p.bg_float },
-		BlinkCmpSignatureHelpBorder = { fg = p.border, bg = p.bg_float },
+		BlinkCmpSignatureHelp = { fg = p.fg, bg = bg },
+		BlinkCmpSignatureHelpBorder = { fg = p.border, bg = bg },
 		BlinkCmpSignatureHelpActiveParameter = { fg = p.orange, bold = true },
 
 		BlinkCmpKind = { fg = p.fg_muted },

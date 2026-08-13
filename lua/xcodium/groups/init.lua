@@ -12,6 +12,11 @@ local which_key = require("xcodium.groups.plugins.which_key")
 local illuminate = require("xcodium.groups.plugins.illuminate")
 local snacks = require("xcodium.groups.plugins.snacks")
 local bufferline = require("xcodium.groups.plugins.bufferline")
+local noice = require("xcodium.groups.plugins.noice")
+local flash = require("xcodium.groups.plugins.flash")
+local fzf = require("xcodium.groups.plugins.fzf")
+local lazy = require("xcodium.groups.plugins.lazy")
+local git_conflict = require("xcodium.groups.plugins.git_conflict")
 
 local plugins = {
 	["lewis6991/gitsigns.nvim"] = gitsigns,
@@ -23,6 +28,11 @@ local plugins = {
 	["RRethy/vim-illuminate"] = illuminate,
 	["folke/snacks.nvim"] = snacks,
 	["akinsho/bufferline.nvim"] = bufferline,
+	["folke/noice.nvim"] = noice,
+	["folke/flash.nvim"] = flash,
+	["ibhagwan/fzf-lua"] = fzf,
+	["folke/lazy.nvim"] = lazy,
+	["akinsho/git-conflict.nvim"] = git_conflict,
 }
 
 function M.setup(p, opts)

@@ -31,6 +31,14 @@ function M.setup()
 	if opts.terminal_colors then
 		util.set_terminal(p.terminal)
 	end
+
+	vim.schedule(function()
+		local lualine = package.loaded["lualine"]
+		if lualine then
+			package.loaded["lualine.themes.xcodium"] = nil
+			pcall(lualine.refresh)
+		end
+	end)
 end
 
 return M

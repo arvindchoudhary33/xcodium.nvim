@@ -32,7 +32,7 @@ function M.get(p, opts)
 		SnacksNotifierIconError = { fg = p.error },
 		SnacksNotifierIconDebug = { fg = p.fg_muted },
 		SnacksNotifierIconTrace = { fg = p.fg_subtle },
-		SnacksDashboardNormal = { fg = p.fg, bg = p.bg },
+		SnacksDashboardNormal = { fg = p.fg, bg = opts.transparent and "NONE" or p.bg },
 		SnacksDashboardDesc = { fg = p.fg_muted },
 		SnacksDashboardFile = { fg = p.blue },
 		SnacksDashboardDir = { fg = p.fg_muted },
@@ -43,7 +43,7 @@ function M.get(p, opts)
 		SnacksDashboardTerminal = { fg = p.fg },
 		SnacksDashboardSpecial = { fg = p.purple },
 		SnacksPickerTitle = { fg = p.bg, bg = p.blue, bold = true },
-		SnacksPickerBorder = { fg = p.border, bg = p.bg_float },
+		SnacksPickerBorder = { fg = p.border, bg = bg_float },
 	}
 end
 

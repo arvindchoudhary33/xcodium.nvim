@@ -23,9 +23,15 @@ function M.get(p, opts)
 
 		SignColumn = { bg = none },
 		ColorColumn = { bg = p.bg_highlight },
-		EndOfBuffer = { fg = bg },
+		EndOfBuffer = { fg = p.bg },
 		Folded = { fg = p.fg_muted, bg = p.bg_highlight },
 		FoldColumn = { fg = p.fg_subtle },
+
+		WinBar = { fg = p.fg, bg = bg },
+		WinBarNC = { fg = p.fg_muted, bg = bg },
+		FloatFooter = { fg = p.fg_muted, bg = bg_float },
+
+		DiagnosticOk = { fg = p.teal },
 
 		StatusLine = { fg = p.fg, bg = bg_status },
 		StatusLineNC = { fg = p.fg_muted, bg = bg_tab },

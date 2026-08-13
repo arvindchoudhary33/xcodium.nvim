@@ -8,9 +8,15 @@ function M.get(p, _)
 		GitSignsAddNr = { fg = p.git_add },
 		GitSignsChangeNr = { fg = p.git_change },
 		GitSignsDeleteNr = { fg = p.git_delete },
-		GitSignsAddLn = { bg = p.bg_highlight },
-		GitSignsChangeLn = { bg = p.bg_highlight },
-		GitSignsDeleteLn = { bg = p.bg_highlight },
+		GitSignsAddLn = { bg = "#1a2e1a" },
+		GitSignsChangeLn = { bg = "#2e2010" },
+		GitSignsDeleteLn = { bg = "#2e1010" },
+		GitSignsTopdelete = { fg = p.git_delete },
+		GitSignsChangedelete = { fg = p.git_change },
+		GitSignsUntracked = { fg = p.cyan },
+		GitSignsTopdeleteNr = { fg = p.git_delete },
+		GitSignsChangedeleteNr = { fg = p.git_change },
+		GitSignsUntrackedNr = { fg = p.cyan },
 		GitSignsCurrentLineBlame = { fg = p.fg_subtle, italic = true },
 	}
 end
