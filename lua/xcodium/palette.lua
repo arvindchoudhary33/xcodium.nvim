@@ -189,7 +189,7 @@ M.wwdc16 = {
 	hint = "#51728e",
 
 	git_add = "#48ae45",
-	git_change = "#3653d2",
+	git_change = "#e8b84b",
 	git_delete = "#e24333",
 
 	terminal = {

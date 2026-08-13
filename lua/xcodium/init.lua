@@ -16,7 +16,7 @@ end
 
 function M._load(style)
 	local s = style or config.options.style or "dark"
-	M.load({ style = s })
+	M.load(vim.tbl_extend("force", config.options, { style = s }))
 end
 
 return M

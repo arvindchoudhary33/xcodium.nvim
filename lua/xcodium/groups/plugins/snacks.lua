@@ -1,9 +1,21 @@
 local M = {}
 
-function M.get(p, _)
+function M.get(p, opts)
+	local bg_float = opts.transparent and "NONE" or p.bg_float
 	return {
-		SnacksNormal = { fg = p.fg, bg = p.bg_float },
-		SnacksBorder = { fg = p.border, bg = p.bg_float },
+		SnacksNormal = { fg = p.fg, bg = bg_float },
+		SnacksNormalNC = { fg = p.fg_muted, bg = bg_float },
+		SnacksBorder = { fg = p.border, bg = bg_float },
+		SnacksWinBar = { fg = p.fg, bg = bg_float, bold = true },
+		SnacksWinBarNC = { fg = p.fg_muted, bg = bg_float },
+		SnacksWinSeparator = { fg = p.border, bg = bg_float },
+		SnacksTitle = { fg = p.fg, bg = bg_float, bold = true },
+		SnacksFooter = { fg = p.fg_muted, bg = bg_float },
+		SnacksFooterKey = { fg = p.pink, bg = bg_float, bold = true },
+		SnacksFooterDesc = { fg = p.fg_muted, bg = bg_float },
+		SnacksWinKey = { fg = p.pink, bold = true },
+		SnacksWinKeySep = { fg = p.fg_subtle },
+		SnacksWinKeyDesc = { fg = p.fg },
 		SnacksBackdrop = { bg = p.bg, blend = 60 },
 		SnacksNotifierInfo = { fg = p.info },
 		SnacksNotifierWarn = { fg = p.warning },

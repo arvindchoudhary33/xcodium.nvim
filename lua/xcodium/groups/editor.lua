@@ -3,13 +3,17 @@ local M = {}
 function M.get(p, opts)
 	local none = "NONE"
 	local bg = opts.transparent and none or p.bg
+	local bg_float = opts.transparent and none or p.bg_float
+	local bg_sidebar = opts.transparent and none or p.bg_sidebar
+	local bg_status = opts.transparent and none or p.bg_float
+	local bg_tab = opts.transparent and none or p.bg_highlight
 
 	return {
 		Normal = { fg = p.fg, bg = bg },
 		NormalNC = { fg = p.fg, bg = bg },
-		NormalFloat = { fg = p.fg, bg = p.bg_float },
-		FloatBorder = { fg = p.border, bg = p.bg_float },
-		FloatTitle = { fg = p.fg, bg = p.bg_float, bold = true },
+		NormalFloat = { fg = p.fg, bg = bg_float },
+		FloatBorder = { fg = p.border, bg = bg_float },
+		FloatTitle = { fg = p.fg, bg = bg_float, bold = true },
 
 		Cursor = { fg = p.bg, bg = p.fg },
 		CursorLine = { bg = p.bg_highlight },
@@ -23,8 +27,8 @@ function M.get(p, opts)
 		Folded = { fg = p.fg_muted, bg = p.bg_highlight },
 		FoldColumn = { fg = p.fg_subtle },
 
-		StatusLine = { fg = p.fg, bg = p.bg_float },
-		StatusLineNC = { fg = p.fg_muted, bg = p.bg_highlight },
+		StatusLine = { fg = p.fg, bg = bg_status },
+		StatusLineNC = { fg = p.fg_muted, bg = bg_tab },
 		WinSeparator = { fg = p.border },
 		VertSplit = { fg = p.border },
 
@@ -40,8 +44,8 @@ function M.get(p, opts)
 		Visual = { bg = p.bg_selection },
 		VisualNOS = { bg = p.bg_selection },
 
-		TabLine = { fg = p.fg_muted, bg = p.bg_float },
-		TabLineFill = { bg = p.bg_highlight },
+		TabLine = { fg = p.fg_muted, bg = bg_status },
+		TabLineFill = { bg = bg_tab },
 		TabLineSel = { fg = p.fg, bg = p.bg_selection, bold = true },
 
 		WildMenu = { fg = p.fg, bg = p.bg_selection },
