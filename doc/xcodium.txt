@@ -1,0 +1,109 @@
+*xcodium.txt*  Xcode themes for Neovim
+
+You use vim You know what you're doing. This will be short.
+
+Contents: |xcodium-install| |xcodium-variants| |xcodium-config|
+          |xcodium-transparency| |xcodium-customization| |xcodium-plugins|
+
+INSTALL                                                      *xcodium-install*
+>lua
+  {
+    "arvindchoudhary33/xcodium.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("xcodium").setup()
+      vim.cmd.colorscheme("xcodium-dark")
+    end,
+  }
+<
+
+VARIANTS                                                    *xcodium-variants*
+
+  xcodium-dark        #1c1c1e  the one you probably want
+  xcodium-light       #ffffff  for the brave
+  xcodium-midnight    #000000  pure black, very serious
+  xcodium-dusk        #1f212a  dark blue-grey
+  xcodium-wwdc16      #1f2028  the conference theme nobody asked for
+
+>vim
+  :colorscheme xcodium-midnight
+<
+
+CONFIGURATION                                                 *xcodium-config*
+
+Smart people only. Defaults shown: >lua
+  require("xcodium").setup({
+    style           = "dark",   -- dark | light | midnight | dusk | wwdc16
+    transparent     = false,
+    terminal_colors = true,
+    italic_comments = true,
+    on_colors       = function(colors) end,
+    on_highlights   = function(highlights, colors) end,
+  })
+<
+
+TRANSPARENCY                                            *xcodium-transparency*
+>lua
+  require("xcodium").setup({ transparent = true })
+<
+Toggle at runtime: >lua
+  local cfg = require("xcodium.config")
+  require("xcodium").load(
+    vim.tbl_extend("force", cfg.options, {
+      transparent = not cfg.options.transparent
+    })
+  )
+<
+
+CUSTOMIZATION                                          *xcodium-customization*
+
+Don't like a color? Change it: >lua
+  on_colors = function(c)
+    c.blue = "#61afef"
+    c.pink = "#e06c75"
+  end
+<
+Don't like a highlight group? Also change it: >lua
+  on_highlights = function(hl, c)
+    hl.CursorLineNr = { fg = c.blue, bold = true }
+    hl["@keyword"]  = { fg = c.pink, italic = true }
+  end
+<
+Color keys: `bg` `bg_float` `bg_highlight` `bg_selection` `fg` `fg_muted`
+`fg_subtle` `border` `pink` `red` `orange` `yellow` `blue` `purple`
+`lpurple` `cyan` `teal` `error` `warning` `info` `hint`
+`git_add` `git_change` `git_delete`
+
+PLUGINS                                                      *xcodium-plugins*
+
+Auto-detected via lazy.nvim. Nothing to configure.
+
+  gitsigns · neo-tree · telescope · blink.cmp · indent-blankline · which-key
+  illuminate · snacks · bufferline · noice · flash · fzf-lua · git-conflict
+  lazy.nvim · lualine
+
+lualine needs one extra line: >lua
+  require("lualine").setup({ options = { theme = "xcodium" } })
+<
+Adding your own plugin — create `lua/xcodium/groups/plugins/myplugin.lua`: >lua
+  local M = {}
+  function M.get(p, opts)
+    local bg = opts.transparent and "NONE" or p.bg_float
+    return {
+      MyPluginNormal = { fg = p.fg, bg = bg },
+      MyPluginBorder = { fg = p.border, bg = bg },
+    }
+  end
+  return M
+<
+Register in `lua/xcodium/groups/init.lua`: >lua
+  local myplugin = require("xcodium.groups.plugins.myplugin")
+  local plugins = {
+    ["author/myplugin.nvim"] = myplugin,
+  }
+<
+
+If something looks wrong, open an issue. If everything looks right — go write some code.
+
+vim:tw=78:ts=8:ft=help:norl:
