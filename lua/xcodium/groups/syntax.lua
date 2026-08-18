@@ -29,11 +29,11 @@ function M.get(p, opts)
 
     ["@variable"]               = variables,
     ["@variable.builtin"]       = { fg = p.pink },
-    ["@variable.member"]        = { fg = p.fg },
-    ["@variable.parameter"]     = { fg = p.fg },
+    ["@variable.member"]        = { fg = p.teal },
+    ["@variable.parameter"]     = { fg = p.cyan },
     ["@variable.parameter.builtin"] = { fg = p.pink },
 
-    ["@property"]               = { fg = p.fg },
+    ["@property"]               = { fg = p.teal },
 
     ["@function"]               = functions,
     ["@function.method"]        = functions,
