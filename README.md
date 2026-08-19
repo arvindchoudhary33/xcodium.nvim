@@ -59,6 +59,73 @@ Xcode's color themes for Neovim. Five variants, full Tree-sitter and LSP support
 :colorscheme xcodium-midnight
 ```
 
+## Palette
+
+### Dark
+
+![bg](https://img.shields.io/badge/bg-%231c1c1e-1c1c1e?style=flat-square)
+![fg](https://img.shields.io/badge/fg-%23dfdfe0-dfdfe0?style=flat-square)
+![pink](https://img.shields.io/badge/pink-%23ff7ab2-ff7ab2?style=flat-square)
+![red](https://img.shields.io/badge/red-%23ff8170-ff8170?style=flat-square)
+![orange](https://img.shields.io/badge/orange-%23ffa14f-ffa14f?style=flat-square)
+![yellow](https://img.shields.io/badge/yellow-%23d9c97c-d9c97c?style=flat-square)
+![blue](https://img.shields.io/badge/blue-%234eb0cc-4eb0cc?style=flat-square)
+![purple](https://img.shields.io/badge/purple-%23b281eb-b281eb?style=flat-square)
+![cyan](https://img.shields.io/badge/cyan-%236bdfff-6bdfff?style=flat-square)
+![teal](https://img.shields.io/badge/teal-%2378c2b3-78c2b3?style=flat-square)
+
+### Midnight
+
+![bg](https://img.shields.io/badge/bg-%23000000-000000?style=flat-square)
+![fg](https://img.shields.io/badge/fg-%23ffffff-ffffff?style=flat-square)
+![pink](https://img.shields.io/badge/pink-%23d31895-d31895?style=flat-square)
+![red](https://img.shields.io/badge/red-%23ff2b38-ff2b38?style=flat-square)
+![orange](https://img.shields.io/badge/orange-%23ffa14f-ffa14f?style=flat-square)
+![yellow](https://img.shields.io/badge/yellow-%23e8c84a-e8c84a?style=flat-square)
+![blue](https://img.shields.io/badge/blue-%23009fff-009fff?style=flat-square)
+![purple](https://img.shields.io/badge/purple-%23a259e6-a259e6?style=flat-square)
+![cyan](https://img.shields.io/badge/cyan-%2323ff82-23ff82?style=flat-square)
+![teal](https://img.shields.io/badge/teal-%2341cc45-41cc45?style=flat-square)
+
+### Dusk
+
+![bg](https://img.shields.io/badge/bg-%231f212a-1f212a?style=flat-square)
+![fg](https://img.shields.io/badge/fg-%23f9f8f5-f9f8f5?style=flat-square)
+![pink](https://img.shields.io/badge/pink-%23e06c9f-e06c9f?style=flat-square)
+![red](https://img.shields.io/badge/red-%23e05c6e-e05c6e?style=flat-square)
+![orange](https://img.shields.io/badge/orange-%23ffa14f-ffa14f?style=flat-square)
+![yellow](https://img.shields.io/badge/yellow-%23d4c97c-d4c97c?style=flat-square)
+![blue](https://img.shields.io/badge/blue-%235bafc9-5bafc9?style=flat-square)
+![purple](https://img.shields.io/badge/purple-%23b57ed9-b57ed9?style=flat-square)
+![cyan](https://img.shields.io/badge/cyan-%2356c9d8-56c9d8?style=flat-square)
+![teal](https://img.shields.io/badge/teal-%2341b64a-41b64a?style=flat-square)
+
+### WWDC16
+
+![bg](https://img.shields.io/badge/bg-%231f2028-1f2028?style=flat-square)
+![fg](https://img.shields.io/badge/fg-%23ffffff-ffffff?style=flat-square)
+![pink](https://img.shields.io/badge/pink-%23c94fa0-c94fa0?style=flat-square)
+![red](https://img.shields.io/badge/red-%23e24333-e24333?style=flat-square)
+![orange](https://img.shields.io/badge/orange-%23e87c3e-e87c3e?style=flat-square)
+![yellow](https://img.shields.io/badge/yellow-%23e8b84b-e8b84b?style=flat-square)
+![blue](https://img.shields.io/badge/blue-%2313a098-13a098?style=flat-square)
+![purple](https://img.shields.io/badge/purple-%23a42b82-a42b82?style=flat-square)
+![cyan](https://img.shields.io/badge/cyan-%234ec9c0-4ec9c0?style=flat-square)
+![teal](https://img.shields.io/badge/teal-%2348ae45-48ae45?style=flat-square)
+
+### Light
+
+![bg](https://img.shields.io/badge/bg-%23ffffff-ffffff?style=flat-square)
+![fg](https://img.shields.io/badge/fg-%23000000-000000?style=flat-square)
+![pink](https://img.shields.io/badge/pink-%23ad3da4-ad3da4?style=flat-square)
+![red](https://img.shields.io/badge/red-%23c41a16-c41a16?style=flat-square)
+![orange](https://img.shields.io/badge/orange-%2378492a-78492a?style=flat-square)
+![yellow](https://img.shields.io/badge/yellow-%23804b00-804b00?style=flat-square)
+![blue](https://img.shields.io/badge/blue-%230f68a0-0f68a0?style=flat-square)
+![purple](https://img.shields.io/badge/purple-%237b3b9e-7b3b9e?style=flat-square)
+![cyan](https://img.shields.io/badge/cyan-%230f68a0-0f68a0?style=flat-square)
+![teal](https://img.shields.io/badge/teal-%2323575c-23575c?style=flat-square)
+
 ## Transparency
 
 ```lua
