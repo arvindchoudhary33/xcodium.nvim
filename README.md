@@ -8,6 +8,7 @@ Xcode's color themes for Neovim. Five variants, full Tree-sitter and LSP support
 ![screen2](assets/screen2.png)
 ![screen3](assets/screen3.png)
 ![screen4](assets/screen4.png)
+![screen5](assets/screen5.png)
 
 ## Requirements
 
